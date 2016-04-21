@@ -20,6 +20,7 @@ io.on('connection', function (socket){
 	//timestamp property --JavaScript timestap
 
 	socket.emit('message', {
+		name: 'System',
 		text: 'Welcome to the chat Application',
 		timestamp: moment().valueOf()
 	});
